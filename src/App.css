@@ -1,0 +1,59 @@
+/* Make sure root and app fill the screen */
+html, body, #root, #app-root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  /* or use background-image: url('/path/to/image.jpg'); */
+}
+
+
+/* Ensure no intermediate wrapper restricts full width */
+.App {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login page wrapper for full centering */
+.login-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  background-color: #f2f2f2;
+}
+
+/* Login box styling */
+.login-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-box h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn-group .btn {
+  flex: 1;
+}
